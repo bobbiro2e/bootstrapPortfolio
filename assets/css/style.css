@@ -1,6 +1,3 @@
-* {
-    overflow: scroll;
-}
 body {
     display:block;
     margin: 0;
@@ -38,6 +35,8 @@ a:hover {
 .mainContent {
     background-color:#EAEEEB;
     max-height:100%;
+    max-width:960px;
+    width:90%;
 }
 
 #aboutMe {
@@ -123,4 +122,32 @@ input[type=submit]:hover {
 label{
     font-family: 'Quattrocento Sans', sans-serif;
     color:#333B44;
+}
+
+@media (max-width: 768px){
+    .justify-content-end{
+        justify-content: center !important;
+        background-color: #2C2F3D;
+        width:100%;
+    }
+    
+    .noPad{
+        padding:0px;
+    }
+
+    #Bobbi {
+        font-size: 60px;
+        border-bottom: 5px solid #7A7768;
+    }
+}
+
+@media (min-width: 768px) {
+  
+    #Bobbi {
+        font-size: 29px;
+        border-bottom: 5px solid #7A7768;
+    }
+    .header{
+        border-bottom: 5px solid #7A7768;
+    }
 }
